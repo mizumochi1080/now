@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+main {
+    user-select: none;
+}
+
+.row {
+    font-size: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.small_display {
+    display: none;
+}
+
+@media(max-width: 600px){
+    .big_display {
+        display: none;
+    }
+    .small_display {
+        display: flex;
+    }
+}
+
+@media(max-width: 450px){
+    .row {
+        font-size: 30px;
+    }
+}
